@@ -1,4 +1,7 @@
+package src.main.java.com.loops;
+
 import java.util.Scanner;
+import src.test.java.com.loops.TakeABreakTest;
 
 public class TakeABreak {
     public static void main(String[] args) {
@@ -10,5 +13,12 @@ public class TakeABreak {
         }
 
         System.out.println("You have decided to take a break.");
+    }
+
+    public static String takeABreak(String yes) {
+        if ("yes".equalsIgnoreCase(yes)) {
+            return "Break time!";
+        }
+        return "No break yet.";
     }
 }

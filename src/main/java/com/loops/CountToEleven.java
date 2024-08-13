@@ -1,4 +1,7 @@
+package src.main.java.com.loops;
+
 import java.util.Scanner;
+import src.test.java.com.loops.CountToElevenTest;
 
 public class CountToEleven {
     public static void main(String[] args) {
@@ -14,5 +17,12 @@ public class CountToEleven {
                 System.out.println(i);
             }
         }
+    }
+
+    public static int countToEleven(int i) {
+        if (i < 11) {
+            return 11;
+        }
+        return i;
     }
 }

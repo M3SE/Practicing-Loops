@@ -1,4 +1,7 @@
+package src.main.java.com.loops;
+
 import java.util.Scanner;
+import src.test.java.com.loops.PositiveNumbersTest;
 
 public class PositiveNumbers {
     public static void main(String[] args) {
@@ -19,5 +22,9 @@ public class PositiveNumbers {
         }
 
         System.out.println("Program ended because you entered zero.");
+    }
+
+    public static boolean isPositive(int i) {
+        return i > 0;
     }
 }
